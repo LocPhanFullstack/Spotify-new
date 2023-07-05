@@ -47,7 +47,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({ products }) => {
 
         if (subscription) {
             setPriceIdLoading(undefined);
-            return toast('Already subscribed');
+            return toast("You've already subscribed");
         }
 
         try {
@@ -91,7 +91,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({ products }) => {
     }
 
     if (subscription) {
-        content = <div className="text-center">Already subscribed.</div>;
+        content = <div className="text-center">You&apos;ve already subscribed.</div>;
     }
 
     return (
